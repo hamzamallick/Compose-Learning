@@ -24,6 +24,9 @@ fun ResourcesAccess(){
         Text(text = stringResource(R.string.name),
             color = colorResource(R.color.newColor))
 
+        Text(text = "hey this is Hamza new on GitHub",
+            color = colorResource(R.color.newColor))
+
         Image(painter = painterResource(R.drawable.settings), contentDescription = "Setting")
     }
 
