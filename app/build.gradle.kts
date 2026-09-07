@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.basics"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.example.basics"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -61,7 +61,6 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core")
 
     // Navigation Compose
-    implementation("androidx.navigation:navigation-compose:2.9.8")
 
     // ConstraintLayout Compose
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0")
@@ -81,4 +80,13 @@ dependencies {
     // Debug
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    implementation(platform("androidx.compose:compose-bom:2026.08.00"))
+    implementation("androidx.compose.foundation:foundation")
+
+
+    implementation("com.airbnb.android:lottie-compose:6.7.1")
+
+    // Jetpack Compose integration
+    implementation("androidx.navigation:navigation-compose:2.9.8")
 }
