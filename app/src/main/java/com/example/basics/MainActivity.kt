@@ -27,6 +27,7 @@ import com.example.basics.C_Tools.ProgressIndicatorExample
 import com.example.basics.D_MenuBox.MenuBox
 import com.example.basics.I_PassingData.NavGraph
 import com.example.basics.J_NestedNavi.Navigation.NavLogin
+import com.example.basics.K_MVVM.MainApp
 import com.example.basics.Z_Projects.LazyNavigate.Navigation.NavigationItem
 import com.example.basics.Z_Projects.Login
 import com.example.basics.Z_Projects.Tasbee
@@ -42,7 +43,7 @@ class MainActivity : ComponentActivity() {
                 Box(modifier = Modifier.fillMaxSize(),
                     contentAlignment = Alignment.Center){
 
-                    NavigationItem()
+                    MainApp()
 
                 }
 
